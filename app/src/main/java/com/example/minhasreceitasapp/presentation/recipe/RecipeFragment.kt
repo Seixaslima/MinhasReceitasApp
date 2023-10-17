@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.minhasreceitasapp.databinding.FragmentRecipeBinding
+import com.example.minhasreceitasapp.presentation.recipe.adapter.RecipeAdapter
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
@@ -13,7 +14,7 @@ import com.example.minhasreceitasapp.databinding.FragmentRecipeBinding
 class RecipeFragment : Fragment() {
 
     private lateinit var binding: FragmentRecipeBinding
-    private val adapter by lazy {}
+    private val adapter by lazy { RecipeAdapter()}
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,6 +27,7 @@ class RecipeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         setupListener()
+        setupAdapter()
     }
 
     private fun setupListener () {
@@ -35,7 +37,7 @@ class RecipeFragment : Fragment() {
     }
 
     private fun setupAdapter () {
-        //TODO criar vinculação do adapter
+        binding.rvRecipes.adapter = adapter
     }
 
 }

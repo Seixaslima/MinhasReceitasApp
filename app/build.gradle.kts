@@ -58,6 +58,7 @@ dependencies {
 
     //viewmodel
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
 
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
