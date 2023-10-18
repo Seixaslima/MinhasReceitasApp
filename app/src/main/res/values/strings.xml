@@ -46,4 +46,6 @@
     <string name="plus_symbol">plus simbol</string>
     <string name="add_symbol">add symbol</string>
     <string name="label_empty_recipes">Ops, não temos nenhuma receita</string>
+    <string name="title_new_recipe">Nova receita</string>
+    <string name="label_name_recipe">Nome da receita</string>
 </resources>
