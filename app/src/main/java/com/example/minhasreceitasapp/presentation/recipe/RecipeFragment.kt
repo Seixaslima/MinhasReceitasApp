@@ -14,6 +14,7 @@ import com.example.minhasreceitasapp.databinding.FragmentRecipeBinding
 import com.example.minhasreceitasapp.presentation.recipe.adapter.RecipeAdapter
 import com.example.minhasreceitasapp.presentation.recipe.adapter.RecipeState
 import com.example.minhasreceitasapp.presentation.recipe.adapter.RecipesViewModel
+import com.google.android.material.snackbar.Snackbar
 
 /**
  * A simple [Fragment] subclass as the default destination in the navigation.
